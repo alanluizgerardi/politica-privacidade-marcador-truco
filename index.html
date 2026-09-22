@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Política de Privacidade do aplicativo Marcador de Truco."
+    >
+    <meta name="theme-color" content="#064c38">
+    <title>Política de Privacidade | Marcador de Truco</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --green-950: #032f25;
+        --green-900: #064c38;
+        --green-800: #0b6248;
+        --green-100: #e7f3ed;
+        --gold: #f8b928;
+        --gold-soft: #ffe6a3;
+        --cream: #fffaf0;
+        --ink: #17312a;
+        --muted: #557068;
+        --border: #d9e7e0;
+        --white: #ffffff;
+        --shadow: 0 22px 55px rgba(3, 47, 37, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 15% 0%, rgba(248, 185, 40, 0.14), transparent 24rem),
+          linear-gradient(180deg, var(--green-950) 0, var(--green-900) 24rem, #f3f8f5 24rem);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--green-800);
+        font-weight: 700;
+      }
+
+      a:focus-visible {
+        outline: 3px solid var(--gold);
+        outline-offset: 3px;
+        border-radius: 3px;
+      }
+
+      .shell {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        min-height: 340px;
+        display: grid;
+        align-items: center;
+        padding: 48px 0 72px;
+        color: var(--white);
+      }
+
+      .brand {
+        display: grid;
+        grid-template-columns: 132px minmax(0, 1fr);
+        gap: 30px;
+        align-items: center;
+      }
+
+      .brand img {
+        display: block;
+        width: 132px;
+        height: 132px;
+        border-radius: 28px;
+        box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+      }
+
+      .eyebrow {
+        margin: 0 0 6px;
+        color: var(--gold-soft);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        max-width: 740px;
+        font-size: clamp(2rem, 6vw, 3.7rem);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+      }
+
+      .updated {
+        margin: 15px 0 0;
+        color: #d7e9e1;
+      }
+
+      main {
+        margin-top: -48px;
+        padding-bottom: 56px;
+      }
+
+      .card {
+        padding: clamp(24px, 5vw, 54px);
+        background: var(--white);
+        border: 1px solid rgba(255, 255, 255, 0.62);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+      }
+
+      .summary {
+        margin: 0 0 42px;
+        padding: 24px;
+        background: var(--green-100);
+        border-left: 5px solid var(--gold);
+        border-radius: 4px 18px 18px 4px;
+        font-size: 1.06rem;
+      }
+
+      .summary strong {
+        color: var(--green-950);
+      }
+
+      section + section {
+        margin-top: 38px;
+        padding-top: 38px;
+        border-top: 1px solid var(--border);
+      }
+
+      h2 {
+        margin: 0 0 13px;
+        color: var(--green-900);
+        font-size: clamp(1.3rem, 3vw, 1.72rem);
+        line-height: 1.25;
+      }
+
+      h3 {
+        margin: 24px 0 8px;
+        color: var(--green-950);
+        font-size: 1.05rem;
+      }
+
+      p {
+        margin: 0 0 14px;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 8px;
+      }
+
+      .facts {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+        margin: 0 0 42px;
+      }
+
+      .fact {
+        padding: 18px;
+        background: var(--cream);
+        border: 1px solid #f3dfae;
+        border-radius: 16px;
+      }
+
+      .fact strong {
+        display: block;
+        color: var(--green-950);
+        font-size: 1.02rem;
+      }
+
+      .fact span {
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .contact {
+        padding: 22px;
+        background: var(--green-950);
+        color: var(--white);
+        border-radius: 18px;
+      }
+
+      .contact h2 {
+        color: var(--gold-soft);
+      }
+
+      .contact a {
+        color: var(--gold-soft);
+      }
+
+      footer {
+        padding: 0 0 42px;
+        color: var(--muted);
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 680px) {
+        header {
+          padding-top: 34px;
+        }
+
+        .brand {
+          grid-template-columns: 88px minmax(0, 1fr);
+          gap: 18px;
+        }
+
+        .brand img {
+          width: 88px;
+          height: 88px;
+          border-radius: 20px;
+        }
+
+        .facts {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="shell brand">
+        <img src="app-icon.png" alt="Ícone do Marcador de Truco" width="132" height="132">
+        <div>
+          <p class="eyebrow">Marcador de Truco</p>
+          <h1>Política de Privacidade</h1>
+          <p class="updated">Última atualização: 22 de setembro de 2026</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="shell">
+      <article class="card">
+        <p class="summary">
+          <strong>Resumo:</strong> o Marcador de Truco funciona offline, não exige
+          login e não envia ao desenvolvedor os nomes, placares, históricos ou
+          demais informações registradas no aplicativo.
+        </p>
+
+        <div class="facts" aria-label="Resumo das práticas de privacidade">
+          <div class="fact">
+            <strong>Sem login</strong>
+            <span>Nenhuma conta precisa ser criada.</span>
+          </div>
+          <div class="fact">
+            <strong>Dados locais</strong>
+            <span>Histórico salvo no próprio aparelho.</span>
+          </div>
+          <div class="fact">
+            <strong>Sem rastreamento</strong>
+            <span>Sem anúncios, analytics ou perfil de usuário.</span>
+          </div>
+        </div>
+
+        <section>
+          <h2>1. Sobre esta política</h2>
+          <p>
+            Esta Política de Privacidade descreve como o aplicativo
+            <strong>Marcador de Truco</strong>, identificado no Android pelo pacote
+            <code>truco.marcador</code>, lida com informações durante o uso.
+          </p>
+          <p>
+            O responsável pelo aplicativo é <strong>Alan Luiz Gerardi</strong>. O
+            Marcador de Truco é uma ferramenta de marcação e organização de
+            partidas; não é uma plataforma de apostas nem um serviço financeiro.
+          </p>
+        </section>
+
+        <section>
+          <h2>2. Informações registradas no aparelho</h2>
+          <p>
+            O usuário pode inserir informações para organizar suas partidas. Elas
+            são armazenadas localmente em um banco de dados privado do aplicativo e
+            podem incluir:
+          </p>
+          <ul>
+            <li>nomes ou apelidos de jogadores, equipes, partidas e torneios;</li>
+            <li>placares, rodadas, resultados, posições e histórico do baralho;</li>
+            <li>
+              descrições e valores informados manualmente nos recursos de despesas
+              ou caixinha;
+            </li>
+            <li>preferências visuais, tutoriais concluídos e contadores de uso.</li>
+          </ul>
+          <p>
+            O desenvolvedor não recebe, acessa ou visualiza essas informações. O
+            aplicativo não cria perfis de usuário e não associa os dados a uma
+            identidade externa.
+          </p>
+        </section>
+
+        <section>
+          <h2>3. Funcionamento offline e compartilhamento</h2>
+          <p>
+            A versão de produção do aplicativo não solicita permissão de acesso à
+            internet. Não há servidor, login, sincronização em nuvem, publicidade,
+            ferramenta de analytics ou tecnologia de rastreamento integrada ao app.
+          </p>
+          <p>
+            O aplicativo não vende, aluga, transmite ou compartilha com o
+            desenvolvedor ou com terceiros os dados registrados nas partidas. O
+            sistema operacional do aparelho pode realizar cópias de segurança de
+            aplicativos conforme as configurações e a política do provedor de
+            backup escolhidas pelo próprio usuário; esse processo não é controlado
+            pelo Marcador de Truco.
+          </p>
+        </section>
+
+        <section>
+          <h2>4. Pagamentos, valores e apoio voluntário</h2>
+          <p>
+            Valores exibidos como pontos, reais, despesas ou caixinha são somente
+            referências de organização inseridas pelo usuário. O aplicativo não
+            movimenta dinheiro, não realiza cobranças, não recebe dados bancários e
+            não processa ou confirma pagamentos.
+          </p>
+          <p>
+            A opção “Ajude o projeto” apenas exibe um código PIX fixo e permite
+            copiá-lo para a área de transferência. Qualquer transferência é iniciada
+            e concluída fora do aplicativo, diretamente no banco ou meio de pagamento
+            escolhido pelo usuário. O Marcador de Truco não consulta a transação nem
+            recebe dados sobre ela.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Recursos do aparelho</h2>
+          <h3>Síntese de voz</h3>
+          <p>
+            Os avisos de placar podem utilizar o serviço de texto para fala instalado
+            no aparelho. O aplicativo envia a esse serviço apenas frases de placar,
+            sem nomes de jogadores ou outros dados cadastrados. Sempre que possível,
+            é utilizada uma voz disponível localmente.
+          </p>
+          <h3>Área de transferência</h3>
+          <p>
+            O aplicativo grava o código PIX na área de transferência somente quando
+            o usuário toca em “Copiar PIX”. Ele não lê o conteúdo existente na área
+            de transferência.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Segurança, retenção e exclusão</h2>
+          <p>
+            Os dados ficam no armazenamento privado destinado ao aplicativo pelo
+            sistema operacional. Eles permanecem no aparelho enquanto forem úteis
+            para o histórico ou até que o usuário escolha excluí-los.
+          </p>
+          <p>O usuário pode remover informações das seguintes formas:</p>
+          <ul>
+            <li>usando as opções de exclusão ou limpeza disponíveis no aplicativo;</li>
+            <li>limpando os dados do app nas configurações do Android;</li>
+            <li>desinstalando o aplicativo.</li>
+          </ul>
+          <p>
+            Como não existe conta ou servidor, o desenvolvedor não mantém uma cópia
+            remota que precise ser solicitada ou excluída.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Crianças e adolescentes</h2>
+          <p>
+            O aplicativo não coleta conscientemente dados pessoais de crianças ou
+            adolescentes. Ele não possui comunicação entre usuários, criação de
+            contas, publicidade direcionada ou compras dentro do aplicativo.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Hospedagem desta página</h2>
+          <p>
+            Esta política é hospedada pelo GitHub Pages. Ao visitar a página, o
+            GitHub pode registrar dados técnicos, como o endereço IP, para segurança
+            e operação do serviço, conforme a
+            <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement">
+              Declaração de Privacidade do GitHub</a>. Esta página não adiciona
+            cookies próprios, scripts de analytics ou formulários de coleta.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Alterações nesta política</h2>
+          <p>
+            Esta política poderá ser atualizada quando houver mudanças no aplicativo
+            ou em requisitos legais e das lojas de distribuição. A data da revisão
+            mais recente será indicada no início desta página.
+          </p>
+        </section>
+
+        <section class="contact">
+          <h2>10. Contato</h2>
+          <p>
+            Para dúvidas sobre esta política ou sobre a privacidade no aplicativo,
+            entre em contato com:
+          </p>
+          <p>
+            <strong>Alan Luiz Gerardi</strong><br>
+            <a href="mailto:alanluizgerardi@gmail.com">alanluizgerardi@gmail.com</a>
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="shell">
+      Marcador de Truco · Política de Privacidade
+    </footer>
+  </body>
+</html>
